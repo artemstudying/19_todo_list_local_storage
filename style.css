@@ -1,0 +1,34 @@
+#task-text,
+button {
+  font-size: 1.5em;
+}
+.task-list {
+  padding: 0;
+  width: 50%;
+  min-width: 450px;
+}
+.task-list li {
+  border: 2px solid grey;
+  list-style: none;
+  background-color: yellow;
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.3em;
+}
+.task-list li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.done,
+.remove {
+  float: right;
+}
+.task-list li.made {
+  text-decoration:line-through;
+  background-color: gray;
+}
+.hide .made{
+  display: none;
+}
